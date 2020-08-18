@@ -5,11 +5,9 @@ return sourceArray.map(fun);
 
 
 function reduce(sourceArray,fun, startingPoint=0){
-  let newarr;
-  if(startingPoint!==0){
-   newarr= sourceArray.reduce(fun,startingPoint);}
+  if(startingPoint 0){
+   return sourceArray.reduce(fun,startingPoint);}
   else{
-   newarr= sourceArray.reduce(fun);
+   return sourceArray.reduce(fun);
   }
-  return newarr;
 }
